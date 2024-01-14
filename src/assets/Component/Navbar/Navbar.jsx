@@ -12,7 +12,7 @@ import { IoNotifications } from "react-icons/io5";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center static border-b-0 shadow-xl p-2">
       <div className="flex justify-center items-center gap-5">
         <NavLink
           to="/IconOfProfile"
@@ -26,43 +26,42 @@ const Navbar = () => {
           className={`({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "active" : ""`}
         >
-          <input type="text" className="rounded-full  border" />
+          <input type="text" placeholder="Search Facebook" className="rounded-full px-3 py-1 border border-black" />
         </NavLink>
       </div>
 
       <div className="flex justify-center items-center gap-20">
         <NavLink
           to="/"
-          className={`text-3xl ${
-            location.pathname === '/' ? 'text-blue-600' : ''
-          }`}
+          className={`text-4xl  text-blue-600 ({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active" : ""`}
         >
           <IoHome />
         </NavLink>
         <NavLink
           to="/Video"
-          className={`text-3xl ({ isActive, isPending }) =>
+          className={`text-4xl  text-blue-600 ({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "active" : ""`}
         >
           <MdOutlineOndemandVideo />
         </NavLink>
         <NavLink
           to="/MarketPlace"
-          className={`text-3xl ({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active" : ""`}
+          className={`text-4xl  text-blue-600 ({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active" : ""`}
         >
           <TbReplaceFilled />
         </NavLink>
         <NavLink
           to="/Group"
-          className={`text-3xl ({ isActive, isPending }) =>
+          className={`text-4xl  text-blue-600 ({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "active" : ""`}
         >
           <MdGroups />
         </NavLink>
         <NavLink
           to="/Gaming"
-          className={`text-3xl ({ isActive, isPending }) =>
+          className={`text-4xl  text-blue-600 ({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "active" : ""`}
         >
           <FaGamepad />
@@ -72,21 +71,21 @@ const Navbar = () => {
       <div className="flex justify-center items-center gap-5">
         <NavLink
           to="/Menu"
-          className={`text-3xl ({ isActive, isPending }) =>
+          className={`text-4xl  text-blue-600 ({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "active" : ""`}
         >
           <CgMenuGridR />
         </NavLink>
         <NavLink
           to="/Chat"
-          className={`text-3xl ({ isActive, isPending }) =>
+          className={`text-4xl  text-blue-600 ({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "active" : ""`}
         >
           <RiWechatPayFill />
         </NavLink>
         <NavLink
           to="/Notifications"
-          className={`text-3xl ({ isActive, isPending }) =>
+          className={`text-4xl  text-blue-600 ({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "active" : ""`}
         >
           <IoNotifications />
